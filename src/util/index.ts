@@ -589,3 +589,6 @@ export function delimit<T>(delimiter: () => T, array: T[]): T[] {
   }
   return res;
 }
+
+export { $t, $tPlural } from "./i18n.js";
+
