@@ -400,5 +400,83 @@
   },
   "closeTabsIrreversible": {
     "message": "Your browser may not keep this many tabs in its recent history, so THIS IS IRREVERSIBLE. Are you sure?"
+  },
+  "toggleCollapsedGroupTooltip": {
+    "message": "Hide the tabs for this group (hold $1$ to hide tabs for child groups)"
+  },
+  "stashAllOpenTabsToGroupTooltip": {
+    "message": "Stash all (or highlighted) open tabs to this group (hold $1$ to keep tabs open)"
+  },
+  "stashActiveTabToGroupTooltip": {
+    "message": "Stash the active tab to this group (hold $1$ to keep tabs open)"
+  },
+  "openAllTabsInGroupTooltip": {
+    "message": "Open all tabs in this group (hold $1$ to open in background)"
+  },
+  "openAllTabsAndDeleteGroupTooltip": {
+    "message": "Open all tabs and delete this group (hold $1$ to open in background)"
+  },
+  "openAllTabsAndRemoveFromGroupTooltip": {
+    "message": "Open all tabs and remove them from this group (hold $1$ to open in background)"
+  },
+  "createNewSubGroupTooltip": {
+    "message": "Create a new sub-group within this group"
+  },
+  "newChildGroupMenu": {
+    "message": "New Child Group"
+  },
+  "stashTabsToNewChildGroupTooltip": {
+    "message": "Stash all open tabs to a new child group"
+  },
+  "stashTabsToNewChildGroupMenu": {
+    "message": "Stash Tabs to New Child Group"
+  },
+  "stashToGroupMenu": {
+    "message": "Stash to \"$1$\"..."
+  },
+  "stashTabToGroupTooltip": {
+    "message": "Stash tab to this group (hold $1$ to keep tab open)"
+  },
+  "tabStashedInTooltip": {
+    "message": "This tab is stashed in:\n$1$"
+  },
+  "importIntoGroupTooltip": {
+    "message": "Import links and URLs into this group"
+  },
+  "exportFromGroupTooltip": {
+    "message": "Export links and URLs from this group"
+  },
+  "sortByTitleMenu": {
+    "message": "Sort by Title"
+  },
+  "sortByUrlMenu": {
+    "message": "Sort by URL"
+  },
+  "sortByDateAddedDescMenu": {
+    "message": "Sort by Date Added (Newest First)"
+  },
+  "sortByDateAddedAscMenu": {
+    "message": "Sort by Date Added (Oldest First)"
+  },
+  "closeStashedTabsInGroupTooltip": {
+    "message": "Close any open tabs that are stashed in this group"
+  },
+  "deleteGroupTooltip": {
+    "message": "Delete the whole group and all its tabs and child groups"
+  },
+  "deleteGroupMenu": {
+    "message": "Delete Group"
+  },
+  "savedAt": {
+    "message": "Saved $1$"
+  },
+  "folder_tooltip_fmt": {
+    "message": "$1$\n$2$, $3$ ($4$ open, $5$ unloaded, $6$ hidden)"
+  },
+  "child_group_one": {
+    "message": "$1$ group"
+  },
+  "child_group_many": {
+    "message": "$1$ groups"
   }
 }

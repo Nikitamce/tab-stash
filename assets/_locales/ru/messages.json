@@ -436,5 +436,86 @@
   },
   "closeTabsIrreversible": {
     "message": "Браузер может не сохранить столько вкладок в недавней истории, поэтому ЭТО ДЕЙСТВИЕ НЕОБРАТИМО. Вы уверены?"
+  },
+  "toggleCollapsedGroupTooltip": {
+    "message": "Скрыть вкладки этой группы (удерживайте $1$, чтобы скрыть вкладки дочерних групп)"
+  },
+  "stashAllOpenTabsToGroupTooltip": {
+    "message": "Сохранить все (или выделенные) открытые вкладки в эту группу (удерживайте $1$, чтобы оставить вкладки открытыми)"
+  },
+  "stashActiveTabToGroupTooltip": {
+    "message": "Сохранить активную вкладку в эту группу (удерживайте $1$, чтобы оставить её открытой)"
+  },
+  "openAllTabsInGroupTooltip": {
+    "message": "Открыть все вкладки этой группы (удерживайте $1$, чтобы открыть в фоновом режиме)"
+  },
+  "openAllTabsAndDeleteGroupTooltip": {
+    "message": "Открыть все вкладки и удалить эту группу (удерживайте $1$, чтобы открыть в фоновом режиме)"
+  },
+  "openAllTabsAndRemoveFromGroupTooltip": {
+    "message": "Открыть все вкладки и убрать их из этой группы (удерживайте $1$, чтобы открыть в фоновом режиме)"
+  },
+  "createNewSubGroupTooltip": {
+    "message": "Создать новую подгруппу в этой группе"
+  },
+  "newChildGroupMenu": {
+    "message": "Создать дочернюю группу"
+  },
+  "stashTabsToNewChildGroupTooltip": {
+    "message": "Сохранить все открытые вкладки в новую дочернюю группу"
+  },
+  "stashTabsToNewChildGroupMenu": {
+    "message": "Сохранить вкладки в новую дочернюю группу"
+  },
+  "stashToGroupMenu": {
+    "message": "Сохранить в «$1$»..."
+  },
+  "stashTabToGroupTooltip": {
+    "message": "Сохранить вкладку в эту группу (удерживайте $1$, чтобы оставить её открытой)"
+  },
+  "tabStashedInTooltip": {
+    "message": "Эта вкладка сохранена в:\n$1$"
+  },
+  "importIntoGroupTooltip": {
+    "message": "Импортировать ссылки и URL в эту группу"
+  },
+  "exportFromGroupTooltip": {
+    "message": "Экспортировать ссылки и URL из этой группы"
+  },
+  "sortByTitleMenu": {
+    "message": "Сортировать по названию"
+  },
+  "sortByUrlMenu": {
+    "message": "Сортировать по URL"
+  },
+  "sortByDateAddedDescMenu": {
+    "message": "Сортировать по дате добавления (сначала новые)"
+  },
+  "sortByDateAddedAscMenu": {
+    "message": "Сортировать по дате добавления (сначала старые)"
+  },
+  "closeStashedTabsInGroupTooltip": {
+    "message": "Закрыть открытые вкладки, сохраненные в этой группе"
+  },
+  "deleteGroupTooltip": {
+    "message": "Удалить всю группу вместе со всеми её вкладками и подгруппами"
+  },
+  "deleteGroupMenu": {
+    "message": "Удалить группу"
+  },
+  "savedAt": {
+    "message": "Сохранено: $1$"
+  },
+  "folder_tooltip_fmt": {
+    "message": "$1$\n$2$, $3$ ($4$ открыто, $5$ выгружено, $6$ скрыто)"
+  },
+  "child_group_one": {
+    "message": "$1$ группа"
+  },
+  "child_group_few": {
+    "message": "$1$ группы"
+  },
+  "child_group_many": {
+    "message": "$1$ групп"
   }
 }
