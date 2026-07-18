@@ -160,7 +160,7 @@ import {
   urlToOpen,
   type TaskIterator,
   $t,
-  $tPlural,
+  $ts,
 } from "../util/index.js";
 
 import Menu from "../components/menu.vue";
@@ -266,8 +266,8 @@ export default defineComponent({
     search_placeholder(): string {
       const counts = this.counts;
       const loading = counts.isLoaded ? "" : "+";
-      const groupsStr = this.$tPlural(counts.folderCount, "group_dative");
-      const tabsStr = this.$tPlural(counts.bookmarkCount, "tab_dative");
+      const groupsStr = this.$ts(counts.folderCount, "group_dative");
+      const tabsStr = this.$ts(counts.bookmarkCount, "tab_dative");
       return this.$t("search_placeholder_fmt", [
         `${counts.folderCount}${loading} ${groupsStr.replace(/^\d+\s*/, "")}`,
         `${counts.bookmarkCount}${loading} ${tabsStr.replace(/^\d+\s*/, "")}`
@@ -294,9 +294,9 @@ export default defineComponent({
     searchTooltip(): string {
       const st = this.tabStats;
       const tabs_sum = st.open + st.discarded + st.hidden;
-      const groupsStr = this.$tPlural(this.counts.folderCount, "group");
-      const stashedTabsStr = this.$tPlural(this.counts.bookmarkCount, "stashed_tab");
-      const tabsInWindowStr = this.$tPlural(tabs_sum, "tab");
+      const groupsStr = this.$ts(this.counts.folderCount, "group");
+      const stashedTabsStr = this.$ts(this.counts.bookmarkCount, "stashed_tab");
+      const tabsInWindowStr = this.$ts(tabs_sum, "tab");
 
       return this.$t("search_tooltip_fmt", [
         groupsStr,
@@ -411,7 +411,7 @@ export default defineComponent({
 
   methods: {
     $t,
-    $tPlural,
+    $ts,
     pageref,
 
     collapseAll() {

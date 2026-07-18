@@ -262,7 +262,7 @@ import {
   filterMap,
   required,
   $t,
-  $tPlural,
+  $ts,
 } from "../util/index.js";
 
 import the from "../globals-ui.js";
@@ -478,8 +478,8 @@ export default defineComponent({
     tooltip(): string {
       const bm_stats = this.folder.$stats;
       const st = this.childTabStats;
-      const childGroupsStr = this.$tPlural(bm_stats.folderCount, "child_group");
-      const stashedTabsStr = this.$tPlural(bm_stats.bookmarkCount, "stashed_tab");
+      const childGroupsStr = this.$ts(bm_stats.folderCount, "child_group");
+      const stashedTabsStr = this.$ts(bm_stats.bookmarkCount, "stashed_tab");
 
       return this.$t("folder_tooltip_fmt", [
         this.title,
@@ -511,7 +511,7 @@ export default defineComponent({
 
   methods: {
     $t,
-    $tPlural,
+    $ts,
     sortByTitle,
     sortByURL,
     sortByDateAdded,

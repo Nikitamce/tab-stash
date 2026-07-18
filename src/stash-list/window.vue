@@ -111,19 +111,19 @@
       <nav v-else class="action-group forest-toolbar">
         <a
           class="action stash newgroup"
-          :title="$tPlural(selectedCount, 'moveTabsToNewGroup', [altKey])"
+          :title="$ts(selectedCount, 'moveTabsToNewGroup', [altKey])"
           @click.prevent.stop="moveToNewGroup"
         />
         <a
           v-if="selectedCount > 0"
           class="action restore"
-          :title="$tPlural(selectedCount, 'openSelectedTabs')"
+          :title="$ts(selectedCount, 'openSelectedTabs')"
           @click.prevent.stop="copyToWindow"
         />
         <a
           v-if="selectedCount > 0"
           class="action restore-remove"
-          :title="$tPlural(selectedCount, 'unstashSelectedTabs')"
+          :title="$ts(selectedCount, 'unstashSelectedTabs')"
           @click.prevent.stop="moveToWindow"
         />
       </nav>
@@ -157,11 +157,11 @@
 
     <confirm-dialog
       v-if="confirmCloseTabs > 0"
-      :confirm="$tPlural(confirmCloseTabs, 'closeTabsConfirm')"
+      :confirm="$ts(confirmCloseTabs, 'closeTabsConfirm')"
       :cancel="$t('cancelButton')"
       @answer="confirmCloseTabsThen($event)"
     >
-      <p>{{ $tPlural(confirmCloseTabs, 'closeTabsWarn') }}</p>
+      <p>{{ $ts(confirmCloseTabs, 'closeTabsWarn') }}</p>
 
       <p>
         {{ $t('closeTabsIrreversible') }}
@@ -174,7 +174,7 @@
 import {defineComponent, ref, type PropType, type Directive} from "vue";
 import browser from "webextension-polyfill";
 
-import {altKeyName, required, $t, $tPlural} from "../util/index.js";
+import {altKeyName, required, $t, $ts} from "../util/index.js";
 
 import the from "../globals-ui.js";
 import type {BookmarkMetadataEntry} from "../model/bookmark-metadata.js";
@@ -272,7 +272,7 @@ export default defineComponent({
     },
 
     tooltip(): string {
-      return this.$tPlural(this.displayCount, this.showStashedTabs ? "open_tabs" : "unstashed_tabs");
+      return this.$ts(this.displayCount, this.showStashedTabs ? "open_tabs" : "unstashed_tabs");
     },
 
     collapsed: {
@@ -323,7 +323,7 @@ export default defineComponent({
 
   methods: {
     $t,
-    $tPlural,
+    $ts,
     attempt(fn: () => Promise<void>) {
       the.model.attempt(fn);
     },
