@@ -478,5 +478,284 @@
   },
   "child_group_many": {
     "message": "$1$ groups"
+  },
+  "copiedNotification": {
+    "message": "Copied"
+  },
+  "restoreURLWarningBold": {
+    "message": "Please make sure this URL looks right."
+  },
+  "restoreURLWarningText": {
+    "message": "If it looks okay, you can restore the tab by copying and pasting the URL into the address bar:"
+  },
+  "importTitle": {
+    "message": "Import"
+  },
+  "importLabel": {
+    "message": "Paste anything containing links or URLs here. Links and URLs will be extracted and converted into bookmarks in your stash."
+  },
+  "splitTabsOptionLabel": {
+    "message": "Split tabs into different groups on:"
+  },
+  "splitParagraphsHeaders": {
+    "message": "Paragraphs and Headers"
+  },
+  "splitHeaders": {
+    "message": "Headers"
+  },
+  "splitNothing": {
+    "message": "Nothing [all in one group]"
+  },
+  "fetchIconsCheckbox": {
+    "message": "Fetch icons and titles from each site"
+  },
+  "importToFolderButton": {
+    "message": "Import to \"$1$\""
+  },
+  "importErrorAlert": {
+    "message": "Info for the following URLs could not be fetched:\n\n$1$\n\nStashed tabs for these URLs have been created anyway, but you may need to set their titles manually. Sorry about that!"
+  },
+  "exportTitle": {
+    "message": "Export"
+  },
+  "exportFormatLabel": {
+    "message": "Format:"
+  },
+  "formatHtmlLinks": {
+    "message": "Clickable Links"
+  },
+  "formatUrlList": {
+    "message": "List of URLs"
+  },
+  "formatMarkdown": {
+    "message": "Markdown"
+  },
+  "formatOneTab": {
+    "message": "OneTab"
+  },
+  "selectAllButton": {
+    "message": "Select All"
+  },
+  "copyButton": {
+    "message": "Copy"
+  },
+  "aboutFormatsLink": {
+    "message": "About Formats..."
+  },
+  "backToTabStashTooltip": {
+    "message": "Back to Tab Stash"
+  },
+  "searchDeletedItemsLabel": {
+    "message": "Search Deleted Items"
+  },
+  "deletedDateGroupHeader": {
+    "message": "Deleted $1$"
+  },
+  "noMatchingDeletedItems": {
+    "message": "No matching items were found. Your item may have been deleted on another computer, or outside of Tab Stash entirely."
+  },
+  "noDeletedItemsYet": {
+    "message": "It doesn't look like you've deleted anything on this computer yet."
+  },
+  "deletedItemsNotFoundHelp": {
+    "message": "Didn't find what you're looking for? It may have been deleted on another computer, or outside of Tab Stash entirely."
+  },
+  "restoreTooltip": {
+    "message": "Restore"
+  },
+  "deleteForeverTooltip": {
+    "message": "Delete Forever"
+  },
+  "deleteForeverButton": {
+    "message": "Delete Forever"
+  },
+  "filteredCountBadge": {
+    "message": "+ $1$ filtered"
+  },
+  "restoringLoading": {
+    "message": "Restoring"
+  },
+  "deletingForeverLoading": {
+    "message": "Deleting Forever"
+  },
+  "deletedAtTooltip": {
+    "message": "Deleted at $1$"
+  },
+  "deletedAtFromTooltip": {
+    "message": "Deleted at $1$ from \"$2$\""
+  },
+  "renameTooltip": {
+    "message": "Rename"
+  },
+  "openBookmarkAndDeleteTooltip": {
+    "message": "Open this tab and delete it from the group (hold $1$ to open in background)"
+  },
+  "deleteBookmarkTooltip": {
+    "message": "Delete this tab from the group"
+  },
+  "stashTabTooltip": {
+    "message": "Stash this tab (hold $1$ to keep tab open)"
+  },
+  "closeTabTooltip": {
+    "message": "Close this tab"
+  },
+  "openSelectedTooltip": {
+    "message": "Open stashed tabs"
+  },
+  "openSelectedButton": {
+    "message": "Open"
+  },
+  "unstashSelectedTooltip": {
+    "message": "Open tabs and delete them from the stash"
+  },
+  "unstashSelectedButton": {
+    "message": "Unstash"
+  },
+  "exportSelectedTooltip": {
+    "message": "Export selected links and URLs"
+  },
+  "searchOrCreateGroupPlaceholder": {
+    "message": "Search or create group"
+  },
+  "deleteSelectedTooltip": {
+    "message": "Delete stashed tabs and close unstashed tabs"
+  },
+  "deleteSelectedButton": {
+    "message": "Delete or Close"
+  },
+  "moveToNewGroupMenu": {
+    "message": "Move to New Group"
+  },
+  "moveToGroupSearchMenu": {
+    "message": "Move to \"$1$\""
+  },
+  "moveToNewGroupTooltip": {
+    "message": "Move to a new group (hold $1$ to copy)"
+  },
+  "moveToGroupSearchTooltip": {
+    "message": "Move to new group \"$1$\" (hold $2$ to copy)"
+  },
+  "moveToFolderTooltip": {
+    "message": "Move to \"$1$\" (hold $2$ to copy)"
+  },
+  "whatsNewTitle": {
+    "message": "What's New in Tab Stash"
+  },
+  "welcomeTitle": {
+    "message": "Welcome to Tab Stash!"
+  },
+  "welcomeIntro": {
+    "message": "Hi! Let's go through a couple quick questions to get you started. Don't worry—you can change your answers later in Tab Stash's options."
+  },
+  "setupWhatToSave": {
+    "message": "What would you like to save when you click the toolbar button?"
+  },
+  "setupSaveAllOpen": {
+    "message": "Save all open tabs to the stash"
+  },
+  "setupSaveActive": {
+    "message": "Save the active tab to the stash"
+  },
+  "setupCantShowPopupNote": {
+    "message": "You can't show the popup and save tabs at the same time."
+  },
+  "setupDontSaveAnything": {
+    "message": "Don't save anything to the stash"
+  },
+  "setupChooseShowOptionNote": {
+    "message": "Choose a different \"Show...\" option to enable this"
+  },
+  "setupWhatToSee": {
+    "message": "What would you like to see when you click the toolbar button?"
+  },
+  "setupShowSidebar": {
+    "message": "Show my stashed tabs in the sidebar"
+  },
+  "setupShowTab": {
+    "message": "Show my stashed tabs in a tab"
+  },
+  "setupShowPopup": {
+    "message": "Show my stashed tabs in a popup"
+  },
+  "setupPopupNote": {
+    "message": "To use the popup, choose \"Don't save anything to the stash\""
+  },
+  "setupDontShowAnything": {
+    "message": "Don't show me anything"
+  },
+  "setupChooseSaveOptionNote": {
+    "message": "Choose a different \"Save...\" option to enable this"
+  },
+  "setupAddressBarContextStash": {
+    "message": "If you stash a tab using the address bar or context menu, what do you want to see?"
+  },
+  "setupAllSetNote": {
+    "message": "You're all set! You can close this tab."
+  },
+  "setupThanksFooter": {
+    "message": "Thanks for trying out Tab Stash. I hope you enjoy it! —Josh"
+  },
+  "restoreLocalFileTitle": {
+    "message": "Restoring a Local File"
+  },
+  "restoreSuspiciousTitle": {
+    "message": "Suspicious Stashed Tab"
+  },
+  "restoreLocalFileWarning": {
+    "message": "For security reasons, your browser won't allow Tab Stash to restore tabs that show files on your computer without your intervention."
+  },
+  "restorePrivilegedWarning": {
+    "message": "For security reasons, your browser won't allow Tab Stash to restore privileged tabs without your intervention."
+  },
+  "restoreURLWarning": {
+    "message": "Please make sure this URL looks right. If it looks okay, you can restore the tab by copying and pasting the URL into the address bar:"
+  },
+  "crashRecoverMsg": {
+    "message": "Oops! Something went wrong. Tab Stash will try to recover automatically."
+  },
+  "crashGetHelpSummary": {
+    "message": "Get Help With This Crash"
+  },
+  "crashOptionsHelp": {
+    "message": "Here are a few options that might help. Crash details are shown below for easy reference—they will be cleared once you close this notification."
+  },
+  "crashShowTroubleshootingBtn": {
+    "message": "Show Troubleshooting Guide"
+  },
+  "crashSearchGitHubBtn": {
+    "message": "Search for Similar Issues"
+  },
+  "crashReportWarnTooltip": {
+    "message": "Please search for similar issues before reporting a crash, to be sure you're not about to report a duplicate."
+  },
+  "crashReportBtn": {
+    "message": "Report Crash"
+  },
+  "crashBrowserLabel": {
+    "message": "Browser:"
+  },
+  "crashExtensionLabel": {
+    "message": "Extension:"
+  },
+  "crashHideReportsSummary": {
+    "message": "Hide Crash Reports"
+  },
+  "crashHideReportsHelp": {
+    "message": "If you're seeing too many crash reports, you can temporarily hide them:"
+  },
+  "crashHide5Min": {
+    "message": "for 5 minutes"
+  },
+  "crashHide1Hour": {
+    "message": "for 1 hour"
+  },
+  "crashHide1Day": {
+    "message": "for 1 day"
+  },
+  "crashHide1Week": {
+    "message": "for 1 week"
+  },
+  "crashHideSettingsNote": {
+    "message": "Crash reports can be turned on again in settings."
   }
 }

@@ -517,5 +517,284 @@
   },
   "child_group_many": {
     "message": "$1$ групп"
+  },
+  "copiedNotification": {
+    "message": "Скопировано"
+  },
+  "restoreURLWarningBold": {
+    "message": "Пожалуйста, убедитесь, что этот URL-адрес выглядит правильно."
+  },
+  "restoreURLWarningText": {
+    "message": "Если всё в порядке, вы можете открыть эту вкладку, скопировав и вставив URL-адрес в адресную строку:"
+  },
+  "importTitle": {
+    "message": "Импорт"
+  },
+  "importLabel": {
+    "message": "Вставьте сюда любой текст, содержащий ссылки или URL-адреса. Ссылки будут извлечены и сохранены как закладки."
+  },
+  "splitTabsOptionLabel": {
+    "message": "Разделять вкладки на группы по:"
+  },
+  "splitParagraphsHeaders": {
+    "message": "Абзацам и заголовкам"
+  },
+  "splitHeaders": {
+    "message": "Заголовкам"
+  },
+  "splitNothing": {
+    "message": "Не разделять [все в одну группу]"
+  },
+  "fetchIconsCheckbox": {
+    "message": "Получать иконки и заголовки для каждого сайта"
+  },
+  "importToFolderButton": {
+    "message": "Импортировать в «$1$»"
+  },
+  "importErrorAlert": {
+    "message": "Не удалось получить информацию для следующих URL:\n\n$1$\n\nВкладки для этих адресов всё равно были созданы, но вам может потребоваться ввести их заголовки вручную. Приносим извинения за неудобства!"
+  },
+  "exportTitle": {
+    "message": "Экспорт"
+  },
+  "exportFormatLabel": {
+    "message": "Формат:"
+  },
+  "formatHtmlLinks": {
+    "message": "Кликабельные ссылки"
+  },
+  "formatUrlList": {
+    "message": "Список URL"
+  },
+  "formatMarkdown": {
+    "message": "Markdown"
+  },
+  "formatOneTab": {
+    "message": "OneTab"
+  },
+  "selectAllButton": {
+    "message": "Выделить всё"
+  },
+  "copyButton": {
+    "message": "Копировать"
+  },
+  "aboutFormatsLink": {
+    "message": "О форматах..."
+  },
+  "backToTabStashTooltip": {
+    "message": "Назад в Tab Stash"
+  },
+  "searchDeletedItemsLabel": {
+    "message": "Поиск удаленных элементов"
+  },
+  "deletedDateGroupHeader": {
+    "message": "Удалено $1$"
+  },
+  "noMatchingDeletedItems": {
+    "message": "Совпадающих элементов не найдено. Возможно, элемент был удален на другом компьютере или вне расширения Tab Stash."
+  },
+  "noDeletedItemsYet": {
+    "message": "Похоже, вы еще ничего не удаляли на этом компьютере."
+  },
+  "deletedItemsNotFoundHelp": {
+    "message": "Не нашли то, что искали? Возможно, элемент был удален на другом компьютере или вне расширения Tab Stash."
+  },
+  "restoreTooltip": {
+    "message": "Восстановить"
+  },
+  "deleteForeverTooltip": {
+    "message": "Удалить навсегда"
+  },
+  "deleteForeverButton": {
+    "message": "Удалить навсегда"
+  },
+  "filteredCountBadge": {
+    "message": "+ $1$ отфильтровано"
+  },
+  "restoringLoading": {
+    "message": "Восстановление"
+  },
+  "deletingForeverLoading": {
+    "message": "Удаление навсегда"
+  },
+  "deletedAtTooltip": {
+    "message": "Удалено: $1$"
+  },
+  "deletedAtFromTooltip": {
+    "message": "Удалено: $1$ из «$2$»"
+  },
+  "renameTooltip": {
+    "message": "Переименовать"
+  },
+  "openBookmarkAndDeleteTooltip": {
+    "message": "Открыть вкладку и удалить её из группы (удерживайте $1$, чтобы открыть в фоновом режиме)"
+  },
+  "deleteBookmarkTooltip": {
+    "message": "Удалить эту вкладку из группы"
+  },
+  "stashTabTooltip": {
+    "message": "Сохранить эту вкладку (удерживайте $1$, чтобы оставить её открытой)"
+  },
+  "closeTabTooltip": {
+    "message": "Закрыть эту вкладку"
+  },
+  "openSelectedTooltip": {
+    "message": "Открыть сохраненные вкладки"
+  },
+  "openSelectedButton": {
+    "message": "Открыть"
+  },
+  "unstashSelectedTooltip": {
+    "message": "Открыть вкладки и удалить их из сохраненных"
+  },
+  "unstashSelectedButton": {
+    "message": "Убрать из сохраненных"
+  },
+  "exportSelectedTooltip": {
+    "message": "Экспортировать выбранные ссылки и URL"
+  },
+  "searchOrCreateGroupPlaceholder": {
+    "message": "Поиск или создание группы"
+  },
+  "deleteSelectedTooltip": {
+    "message": "Удалить сохраненные вкладки и закрыть открытые"
+  },
+  "deleteSelectedButton": {
+    "message": "Удалить или закрыть"
+  },
+  "moveToNewGroupMenu": {
+    "message": "Переместить в новую группу"
+  },
+  "moveToGroupSearchMenu": {
+    "message": "Переместить в «$1$»"
+  },
+  "moveToNewGroupTooltip": {
+    "message": "Переместить в новую группу (удерживайте $1$, чтобы скопировать)"
+  },
+  "moveToGroupSearchTooltip": {
+    "message": "Переместить в новую группу «$1$» (удерживайте $2$, чтобы скопировать)"
+  },
+  "moveToFolderTooltip": {
+    "message": "Переместить в «$1$» (удерживайте $2$, чтобы скопировать)"
+  },
+  "whatsNewTitle": {
+    "message": "Что нового в Tab Stash"
+  },
+  "welcomeTitle": {
+    "message": "Добро пожаловать в Tab Stash!"
+  },
+  "welcomeIntro": {
+    "message": "Привет! Давайте ответим на пару простых вопросов, чтобы начать. Не волнуйтесь — вы сможете изменить свои настройки позже в параметрах Tab Stash."
+  },
+  "setupWhatToSave": {
+    "message": "Что бы вы хотели сохранять при нажатии кнопки на панели инструментов?"
+  },
+  "setupSaveAllOpen": {
+    "message": "Сохранять все открытые вкладки"
+  },
+  "setupSaveActive": {
+    "message": "Сохранять активную вкладку"
+  },
+  "setupCantShowPopupNote": {
+    "message": "Вы не можете одновременно показывать всплывающее окно и сохранять вкладки."
+  },
+  "setupDontSaveAnything": {
+    "message": "Не сохранять вкладки"
+  },
+  "setupChooseShowOptionNote": {
+    "message": "Выберите другой вариант действия при показе, чтобы включить этот параметр"
+  },
+  "setupWhatToSee": {
+    "message": "Что бы вы хотели видеть при нажатии кнопки на панели инструментов?"
+  },
+  "setupShowSidebar": {
+    "message": "Показывать сохраненные вкладки в боковой панели"
+  },
+  "setupShowTab": {
+    "message": "Показывать сохраненные вкладки в отдельной вкладке"
+  },
+  "setupShowPopup": {
+    "message": "Показывать сохраненные вкладки во всплывающем окне"
+  },
+  "setupPopupNote": {
+    "message": "Чтобы использовать всплывающее окно, выберите «Не сохранять вкладки»"
+  },
+  "setupDontShowAnything": {
+    "message": "Ничего не показывать"
+  },
+  "setupChooseSaveOptionNote": {
+    "message": "Выберите другой вариант действия при сохранении, чтобы включить этот параметр"
+  },
+  "setupAddressBarContextStash": {
+    "message": "Если вы сохраняете вкладку через контекстное меню или адресную строку, что вы хотите видеть?"
+  },
+  "setupAllSetNote": {
+    "message": "Всё готово! Вы можете закрыть эту вкладку."
+  },
+  "setupThanksFooter": {
+    "message": "Спасибо, что попробовали Tab Stash. Надеюсь, вам понравится! — Джош"
+  },
+  "restoreLocalFileTitle": {
+    "message": "Восстановление локального файла"
+  },
+  "restoreSuspiciousTitle": {
+    "message": "Подозрительная сохраненная вкладка"
+  },
+  "restoreLocalFileWarning": {
+    "message": "Из соображений безопасности ваш браузер не разрешает Tab Stash открывать локальные файлы на вашем компьютере без вашего участия."
+  },
+  "restorePrivilegedWarning": {
+    "message": "Из соображений безопасности ваш браузер не разрешает Tab Stash открывать привилегированные страницы без вашего участия."
+  },
+  "restoreURLWarning": {
+    "message": "Пожалуйста, убедитесь, что этот URL-адрес выглядит правильно. Если всё в порядке, вы можете открыть эту вкладку, скопировав и вставив URL-адрес в адресную строку:"
+  },
+  "crashRecoverMsg": {
+    "message": "Ой! Что-то пошло не так. Tab Stash попытается восстановиться автоматически."
+  },
+  "crashGetHelpSummary": {
+    "message": "Получить помощь по этому сбою"
+  },
+  "crashOptionsHelp": {
+    "message": "Вот несколько вариантов, которые могут помочь. Подробная информация о сбое приведена ниже — она будет удалена, как только вы закроете это уведомление."
+  },
+  "crashShowTroubleshootingBtn": {
+    "message": "Открыть руководство по устранению неполадок"
+  },
+  "crashSearchGitHubBtn": {
+    "message": "Найти похожие проблемы на GitHub"
+  },
+  "crashReportWarnTooltip": {
+    "message": "Пожалуйста, выполните поиск похожих проблем перед отправкой отчета, чтобы не дублировать существующие темы."
+  },
+  "crashReportBtn": {
+    "message": "Сообщить о сбое"
+  },
+  "crashBrowserLabel": {
+    "message": "Браузер:"
+  },
+  "crashExtensionLabel": {
+    "message": "Расширение:"
+  },
+  "crashHideReportsSummary": {
+    "message": "Скрывать отчеты о сбоях"
+  },
+  "crashHideReportsHelp": {
+    "message": "Если вы видите слишком много сообщений о сбоях, вы можете временно скрыть их:"
+  },
+  "crashHide5Min": {
+    "message": "на 5 минут"
+  },
+  "crashHide1Hour": {
+    "message": "на 1 час"
+  },
+  "crashHide1Day": {
+    "message": "на 1 день"
+  },
+  "crashHide1Week": {
+    "message": "на 1 неделю"
+  },
+  "crashHideSettingsNote": {
+    "message": "Отчеты о сбоях можно включить обратно в настройках."
   }
 }
