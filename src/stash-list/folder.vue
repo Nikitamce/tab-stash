@@ -53,7 +53,11 @@
       />
       <a
         class="action restore-remove"
-        :title="folder.$stats.folderCount === 0 ? $t('openAllTabsAndDeleteGroupTooltip', [bgKey]) : $t('openAllTabsAndRemoveFromGroupTooltip', [bgKey])"
+        :title="
+          folder.$stats.folderCount === 0
+            ? $t('openAllTabsAndDeleteGroupTooltip', [bgKey])
+            : $t('openAllTabsAndRemoveFromGroupTooltip', [bgKey])
+        "
         @click.prevent.stop="restoreAndRemove"
       />
       <Menu
@@ -65,7 +69,7 @@
           :title="$t('createNewSubGroupTooltip')"
         >
           <span class="menu-icon icon icon-new-empty-group"></span>
-          <span>{{ $t('newChildGroupMenu') }}</span>
+          <span>{{ $t("newChildGroupMenu") }}</span>
         </button>
 
         <button
@@ -73,14 +77,14 @@
           :title="$t('stashTabsToNewChildGroupTooltip')"
         >
           <span class="menu-icon icon icon-stash" />
-          <span>{{ $t('stashTabsToNewChildGroupMenu') }}</span>
+          <span>{{ $t("stashTabsToNewChildGroupMenu") }}</span>
         </button>
 
         <template v-if="unstashedOrOpenTabs.length > 0">
           <hr />
           <details @click.stop="">
             <summary class="menu-item">
-              <span>{{ $t('stashToGroupMenu', [title]) }}</span>
+              <span>{{ $t("stashToGroupMenu", [title]) }}</span>
             </summary>
             <ul>
               <li v-for="t of unstashedOrOpenTabs" :key="t.tab.id">
@@ -114,7 +118,7 @@
           :title="$t('importIntoGroupTooltip')"
         >
           <span class="menu-icon icon icon-import" />
-          <span>{{ $t('importMenu') }}</span>
+          <span>{{ $t("importMenu") }}</span>
         </button>
 
         <button
@@ -122,29 +126,29 @@
           :title="$t('exportFromGroupTooltip')"
         >
           <span class="menu-icon icon icon-export" />
-          <span>{{ $t('exportMenu') }}</span>
+          <span>{{ $t("exportMenu") }}</span>
         </button>
 
         <hr />
 
         <button @click.prevent="sort(sortByTitle)">
           <span class="menu-icon icon icon-sort" />
-          <span>{{ $t('sortByTitleMenu') }}</span>
+          <span>{{ $t("sortByTitleMenu") }}</span>
         </button>
 
         <button @click.prevent="sort(sortByURL)">
           <span class="menu-icon icon icon-sort" />
-          <span>{{ $t('sortByUrlMenu') }}</span>
+          <span>{{ $t("sortByUrlMenu") }}</span>
         </button>
 
         <button @click.prevent="sort(sortByDateAddedDescending)">
           <span class="menu-icon icon icon-sort" />
-          <span>{{ $t('sortByDateAddedDescMenu') }}</span>
+          <span>{{ $t("sortByDateAddedDescMenu") }}</span>
         </button>
 
         <button @click.prevent="sort(sortByDateAdded)">
           <span class="menu-icon icon icon-sort" />
-          <span>{{ $t('sortByDateAddedAscMenu') }}</span>
+          <span>{{ $t("sortByDateAddedAscMenu") }}</span>
         </button>
 
         <hr />
@@ -154,15 +158,12 @@
           :title="$t('closeStashedTabsInGroupTooltip')"
         >
           <span class="menu-icon icon icon-delete-stashed" />
-          <span>{{ $t('closeStashedTabsMenu') }}</span>
+          <span>{{ $t("closeStashedTabsMenu") }}</span>
         </button>
         <hr />
-        <button
-          :title="$t('deleteGroupTooltip')"
-          @click.prevent="remove"
-        >
+        <button :title="$t('deleteGroupTooltip')" @click.prevent="remove">
           <span class="menu-icon icon icon-delete"></span>
-          <span>{{ $t('deleteGroupMenu') }}</span>
+          <span>{{ $t("deleteGroupMenu") }}</span>
         </button>
       </Menu>
     </ButtonBox>
@@ -464,7 +465,9 @@ export default defineComponent({
       if (getDefaultFolderNameISODate(unfiltered.title) !== null) {
         return friendlyFolderName(unfiltered.title);
       } else {
-        return this.$t("savedAt", [new Date(unfiltered.dateAdded || 0).toLocaleString()]);
+        return this.$t("savedAt", [
+          new Date(unfiltered.dateAdded || 0).toLocaleString(),
+        ]);
       }
     },
     nonDefaultTitle(): string {
@@ -487,7 +490,7 @@ export default defineComponent({
         stashedTabsStr,
         st.open.toString(),
         st.discarded.toString(),
-        st.hidden.toString()
+        st.hidden.toString(),
       ]);
     },
 

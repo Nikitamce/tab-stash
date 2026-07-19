@@ -28,7 +28,11 @@
       <nav v-if="selectedCount === 0" class="action-group forest-toolbar">
         <a
           class="action stash"
-          :title="showStashedTabs ? $t('stashAllOpenTabsTooltip', [altKey]) : $t('stashAllUnstashedTabsTooltip', [altKey])"
+          :title="
+            showStashedTabs
+              ? $t('stashAllOpenTabsTooltip', [altKey])
+              : $t('stashAllUnstashedTabsTooltip', [altKey])
+          "
           @click.prevent.stop="stash"
         />
         <a
@@ -54,7 +58,7 @@
                 'icon-select-selected': !showStashedTabs,
               }"
             />
-            <span>{{ $t('showUnstashedTabsOnlyMenu') }}</span>
+            <span>{{ $t("showUnstashedTabsOnlyMenu") }}</span>
           </button>
           <button
             :title="$t('showAllOpenTabsTooltip')"
@@ -69,7 +73,7 @@
                 'icon-select-selected': showStashedTabs,
               }"
             />
-            <span>{{ $t('showAllOpenTabsMenu') }}</span>
+            <span>{{ $t("showAllOpenTabsMenu") }}</span>
           </button>
 
           <hr />
@@ -79,21 +83,21 @@
             @click.prevent="removeUnstashed"
           >
             <span class="menu-icon icon icon-delete" />
-            <span>{{ $t('closeUnstashedTabsMenu') }}</span>
+            <span>{{ $t("closeUnstashedTabsMenu") }}</span>
           </button>
           <button
             :title="$t('closeStashedTabsTooltip')"
             @click.prevent="removeStashed"
           >
             <span class="menu-icon icon icon-delete-stashed" />
-            <span>{{ $t('closeStashedTabsMenu') }}</span>
+            <span>{{ $t("closeStashedTabsMenu") }}</span>
           </button>
           <button
             :title="$t('closeAllOpenTabsTooltip')"
             @click.prevent="removeOpen"
           >
             <span class="menu-icon icon icon-delete-opened" />
-            <span>{{ $t('closeAllOpenTabsMenu') }}</span>
+            <span>{{ $t("closeAllOpenTabsMenu") }}</span>
           </button>
 
           <hr />
@@ -103,7 +107,7 @@
             @click.prevent="removeHidden"
           >
             <span class="menu-icon icon icon-delete-opened" />
-            <span>{{ $t('closeHiddenTabsMenu') }}</span>
+            <span>{{ $t("closeHiddenTabsMenu") }}</span>
           </button>
         </Menu>
       </nav>
@@ -161,10 +165,10 @@
       :cancel="$t('cancelButton')"
       @answer="confirmCloseTabsThen($event)"
     >
-      <p>{{ $ts(confirmCloseTabs, 'closeTabsWarn') }}</p>
+      <p>{{ $ts(confirmCloseTabs, "closeTabsWarn") }}</p>
 
       <p>
-        {{ $t('closeTabsIrreversible') }}
+        {{ $t("closeTabsIrreversible") }}
       </p>
     </confirm-dialog>
   </li>
@@ -272,7 +276,10 @@ export default defineComponent({
     },
 
     tooltip(): string {
-      return this.$ts(this.displayCount, this.showStashedTabs ? "open_tabs" : "unstashed_tabs");
+      return this.$ts(
+        this.displayCount,
+        this.showStashedTabs ? "open_tabs" : "unstashed_tabs",
+      );
     },
 
     collapsed: {

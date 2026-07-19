@@ -18,7 +18,7 @@
         @activate="go('whats-new.html')"
         @dismiss="hideWhatsNew"
       >
-        {{ $t('whatsNewNotification', [my_version]) }}
+        {{ $t("whatsNewNotification", [my_version]) }}
       </Notification>
       <Notification
         key="new-fixes"
@@ -26,7 +26,7 @@
         @activate="go('whats-new.html')"
         @dismiss="hideWhatsNew"
       >
-        {{ $t('whatsNewNotification', [my_version]) }}
+        {{ $t("whatsNewNotification", [my_version]) }}
       </Notification>
       <Notification
         key="stash-root-warning"
@@ -41,10 +41,10 @@
         @activate="onDeleteNotifActivated"
       >
         <span v-if="typeof recently_deleted === 'object'">
-          {{ $t('deletedItemUndo', [recentlyDeletedTitle || '']) }}
+          {{ $t("deletedItemUndo", [recentlyDeletedTitle || ""]) }}
         </span>
         <span v-else>
-          {{ $t('deletedItemsShow', [recently_deleted.toString()]) }}
+          {{ $t("deletedItemsShow", [recently_deleted.toString()]) }}
         </span>
       </Notification>
     </transition-group>
@@ -55,39 +55,41 @@
         class="main-menu"
         summaryClass="action mainmenu"
       >
-        <button @click.prevent="showOptions"><span>{{ $t('optionsMenu') }}</span></button>
+        <button @click.prevent="showOptions">
+          <span>{{ $t("optionsMenu") }}</span>
+        </button>
         <hr />
         <button @click.prevent="dialog = {class: 'ImportDialog'}">
-          <span>{{ $t('importMenu') }}</span>
+          <span>{{ $t("importMenu") }}</span>
         </button>
         <button @click.prevent="showExportDialog">
-          <span>{{ $t('exportMenu') }}</span>
+          <span>{{ $t("exportMenu") }}</span>
         </button>
         <hr />
         <a tabindex="0" :href="pageref('deleted-items.html')"
-          ><span>{{ $t('deletedItemsMenu') }}</span></a
+          ><span>{{ $t("deletedItemsMenu") }}</span></a
         >
         <button @click.prevent="fetchMissingFavicons">
-          <span>{{ $t('fetchMissingIconsMenu') }}</span>
+          <span>{{ $t("fetchMissingIconsMenu") }}</span>
         </button>
         <hr />
         <a tabindex="0" href="https://josh-berry.github.io/tab-stash/tips.html"
-          ><span>{{ $t('tipsAndTricksMenu') }}</span></a
+          ><span>{{ $t("tipsAndTricksMenu") }}</span></a
         >
         <a tabindex="0" href="https://github.com/josh-berry/tab-stash/wiki"
-          ><span>{{ $t('wikiMenu') }}</span></a
+          ><span>{{ $t("wikiMenu") }}</span></a
         >
         <a
           tabindex="0"
           href="https://josh-berry.github.io/tab-stash/support.html"
-          ><span>{{ $t('helpAndSupportMenu') }}</span></a
+          ><span>{{ $t("helpAndSupportMenu") }}</span></a
         >
         <hr />
         <a tabindex="0" :href="pageref('whats-new.html')"
-          ><span>{{ $t('whatsNewMenu') }}</span></a
+          ><span>{{ $t("whatsNewMenu") }}</span></a
         >
         <a tabindex="0" href="https://github.com/sponsors/josh-berry"
-          ><span>{{ $t('sponsorMenu') }}</span></a
+          ><span>{{ $t("sponsorMenu") }}</span></a
         >
       </Menu>
 
@@ -122,7 +124,7 @@
 
     <footer class="page status-text">
       Tab Stash {{ my_version }} &mdash;
-      <a :href="pageref('whats-new.html')">{{ $t('whatsNewFooter') }}</a>
+      <a :href="pageref('whats-new.html')">{{ $t("whatsNewFooter") }}</a>
     </footer>
   </main>
 
@@ -270,7 +272,7 @@ export default defineComponent({
       const tabsStr = this.$ts(counts.bookmarkCount, "tab_dative");
       return this.$t("search_placeholder_fmt", [
         `${counts.folderCount}${loading} ${groupsStr.replace(/^\d+\s*/, "")}`,
-        `${counts.bookmarkCount}${loading} ${tabsStr.replace(/^\d+\s*/, "")}`
+        `${counts.bookmarkCount}${loading} ${tabsStr.replace(/^\d+\s*/, "")}`,
       ]);
     },
 
@@ -304,7 +306,7 @@ export default defineComponent({
         tabsInWindowStr,
         st.open.toString(),
         st.discarded.toString(),
-        st.hidden.toString()
+        st.hidden.toString(),
       ]);
     },
 
