@@ -590,5 +590,4 @@ export function delimit<T>(delimiter: () => T, array: T[]): T[] {
   return res;
 }
 
-export { $t, $ts } from "./i18n.js";
-
+export {$t, $ts} from "./i18n.js";

@@ -27,9 +27,17 @@ export function $t(key: MessageKey, substitutions?: string | string[]): string {
  * Returns a pluralized localized string.
  * E.g. keyBase = "group" -> keyBase_one, keyBase_few (if language has few), keyBase_many
  */
-export function $ts(n: number, keyBase: string, substitutions: string[] = []): string {
+export function $ts(
+  n: number,
+  keyBase: string,
+  substitutions: string[] = [],
+): string {
   try {
-    const category = pluralRules ? pluralRules.select(n) : (n === 1 ? "one" : "other");
+    const category = pluralRules
+      ? pluralRules.select(n)
+      : n === 1
+        ? "one"
+        : "other";
     let key = `${keyBase}_many`;
 
     if (category === "one") {
@@ -48,4 +56,3 @@ export function $ts(n: number, keyBase: string, substitutions: string[] = []): s
     return `${n} ${keyBase}`;
   }
 }
-
